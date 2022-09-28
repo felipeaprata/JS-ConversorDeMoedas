@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Conversor</title>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <div class="conversorTitulo">
+                <h2>Conversor de Moedas</h2>
+                <p>Informe o valor em Real e depois selecione um moeda para converter:</p>
+            </div>
+            <input type="text" id="valorReal" placeholder="Real R$">     
+            <div class="conversorMoedas">
+                <h5>Escolha uma Moeda:</h5>
+                <div class="conversorMoedasAll">
+                    <input type="radio" name="moeda" id="dolar" value="dolar">
+                    <img src="image/bandeira-estados-unidos.jpg" alt="">
+                    <label for="moedaDolar">Dólar</label>
+                </div>
+                <div class="conversorMoedasAll">
+                    <input type="radio" name="moeda" id="libra" value="libra">
+                    <img src="image/bandeira-reino-unido-cke.jpg" alt="">
+                    <label for="moedaDolar">Libra</label>
+                </div>
+                <div class="conversorMoedasAll">
+                    <input type="radio" name="moeda" id="euro" value="euro">
+                    <img src="image/bandeira-uniao-europeia.jpg" alt="">
+                    <label for="moedaDolar">Euro</label>
+                </div>
+                <div class="conversorMoedasAll">
+                    <input type="radio" name="moeda" id="iene" value="iene">
+                    <img src="image/Bandeira-japonesa.jpg" alt="">
+                    <label for="moedaDolar">Iene</label>
+                </div>
+                <button id="btnCalcular" onclick="calcularMoedas()">Calcular</button>
+            </div>
+            <div id="resultado"></div>
+        </div>
+    </main>
+    
+</body>
+</html>
